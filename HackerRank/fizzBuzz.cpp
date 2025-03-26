@@ -11,7 +11,7 @@ int main()
     cout << "Enter the number to play: ";
     cin >> n;
 
-    if (0 < n < 1000)
+    if (n < 1000 && n > 0)
     {
         cout << "Valid number" << endl;
         if (n % 3 == 0 || n % 5 == 0)
