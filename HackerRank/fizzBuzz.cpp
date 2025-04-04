@@ -5,6 +5,9 @@ using namespace std;
 int main()
 {
     int n;
+    int cond1 = n % 3 == 0;
+    int cond2 = n % 5 == 0;
+    
     cout << "Let's Play Fizz Buzz Game!" << endl;
     cout << "* Enter the number which is not a negative integer" << endl;
     cout << "* And also it should be not 0 and not more than 1000" << endl;
@@ -24,7 +27,7 @@ int main()
             {
                 cout << n << " : " << "Buzz" << endl;
             }
-            if (n % 3 == 0 && n % 5 == 0)
+            if (cond1 && cond2)
             {
                 cout << n << " : " << "FizzBuzz" << endl;
             }
